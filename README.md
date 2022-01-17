@@ -1,7 +1,7 @@
 # Universe_generator
 <h1>Procedural Generation: Programming The Universe</h1>
 
-https://github.com/ORION-22/universe_generator/blob/f50d1e9a0c55a83db953b6d3a54f121d57fcdeb1/Pixel%20Game%20Engine%20-%20olcGalaxy%20-%20.mp4
+<a><img src='https://github.com/ORION-22/universe_generator/blob/545a39df0625786cb5aafd06399cdfb0820e9a17/Pixel%20Game%20Engine%20-%20olcGalaxy%20-%20.gif'></a>
 
 # olcPixelGameEngine
 The official distribution of olcPixelGameEngine, a tool used in javidx9's YouTube videos and projects.
