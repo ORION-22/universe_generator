@@ -1,4 +1,4 @@
-# universe_generator
+# Universe_generator
 <h1>Procedural Generation: Programming The Universe</h1>
 
 # olcPixelGameEngine
