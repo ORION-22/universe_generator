@@ -63,7 +63,7 @@ public:
 
 			// Population could be a function of other habitat encouraging
 			// properties, such as temperature and water
-			p.population = std::max(rndInt(-5000000, 20000000), 0);
+			p.population = std::max(rndInt(-500000000, 20000000), 0);
 
 			// 10% of planets have a ring
 			p.ring = rndInt(0, 10) == 1;
@@ -261,6 +261,7 @@ public:
 			vBody.x += (star.starDiameter * 1.375) + 8;
 
 
+			int systempopulation = 0;
 
 			// Draw Planets
 			for (auto& planet : star.vPlanets)
@@ -269,7 +270,7 @@ public:
 
 				vBody.x += planet.diameter;
 				FillCircle(vBody, (int)(planet.diameter * 1.0), olc::RED);
-
+				
 				olc::vi2d vMoon = vBody;
 				vMoon.y += planet.diameter + 10;
 
@@ -282,7 +283,11 @@ public:
 				}
 
 				vBody.x += planet.diameter + 8;
+
+				systempopulation += planet.population;
 			}
+
+			DrawString(3, 3, "SystemP :" + std::to_string(systempopulation), olc::RED, 2);
 		}
 
 		return true;
